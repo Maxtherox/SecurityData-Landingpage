@@ -105,3 +105,92 @@ footer p {
     left: 20px;
     bottom: 20px ;
 }
+
+
+
+
+  /* animations */
+
+ 
+
+.womanImage {
+    animation: fromTop .9 1s backwards;
+   
+}
+
+main section {
+    animation: fromBottom .9 1s backwards;
+    
+}
+
+.animation1 {  
+    animation: fromLeft .9 .9s backwards;
+}
+.animation2 {  
+    animation: fromRight .9 2s backwards;
+    
+}
+
+.animation3 {  
+    animation: fromLeft .9 2.5s backwards;
+}
+
+footer div p {
+    animation: fromLeft .9 2.5s backwards;
+}
+
+.line  {
+    animation: fromBottom .9 1s backwards;
+    
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+        
+    to {
+       opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+        
+    to {
+       opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes fromLeft {
+     from {
+        opacity: 0;
+        transform:  translateX(30px);
+     }
+
+     to {
+        opacity: 1;
+        transform: translateX(0);
+     }
+}
+
+@keyframes fromRight {
+    from{
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+}
